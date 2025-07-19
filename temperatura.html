@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversão de Temperatura</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/imgs/logo conversor.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Conversão de Temperatura</h1>
+    <p id="resultado" class="mensagem">Escolha a escala e insira o valor manualmente.</p>
+  </header>
+  <main>
+    <div class="card">
+      <form>
+        <label for="valor">Temperatura:</label><br>
+        <input type="text" id="valor" placeholder="Ex: 25"><br><br>
+
+        <label>De:</label><br>
+        <select id="de">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select><br><br>
+        <label>Para:</label><br>
+        <select id="para">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select><br><br>
+        <button type="button" class="btn" onclick="calcularTemperatura()">Calcular</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>

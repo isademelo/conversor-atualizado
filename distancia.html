@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversão de Distância</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/imgs/logo conversor.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Conversão de Distância</h1>
+    <p id="resultado">Escolha as unidades e insira o valor.</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <form>
+        <label for="valor">Distância:</label><br>
+        <input type="text" id="valor" placeholder="Ex: 100"><br><br>
+
+        <label>De:</label><br>
+        <select id="de">
+          <option value="quilometro">Quilômetros</option>
+          <option value="metro">Metros</option>
+          <option value="milha">Milhas</option>
+        </select><br><br>
+
+        <label>Para:</label><br>
+        <select id="para">
+          <option value="quilometro">Quilômetros</option>
+          <option value="metro">Metros</option>
+          <option value="milha">Milhas</option>
+        </select><br><br>
+        <button type="button" class="btn" onclick="calcularDistancia()">Calcular</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>

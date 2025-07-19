@@ -1,0 +1,115 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #2d0056, #7b2cbf);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* Cartões gerais */
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(160deg, #4c1d95, #6d28d9);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+/* Botão padrão */
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #9333ea;
+  color: white;
+  border-radius: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #7e22ce;
+}
+
+/* Estilo para formulários */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+select {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  color: #333;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+em {
+  font-size: 0.9rem;
+  color: #eee;
+  margin-top: 1rem;
+  display: block;
+}

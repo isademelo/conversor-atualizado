@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversão de Moedas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/imgs/logo conversor.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Conversão de Moedas</h1>
+    <p id="resultado">Simule conversões entre moedas.</p>
+  </header>
+  <main>
+    <div class="card">
+      <form>
+        <label for="valor">Valor:</label><br>
+        <input type="text" id="valor" placeholder="Ex: 100.00"><br><br>
+        <label>De:</label><br>
+        <select id="de">
+          <option value="real">BRL</option>
+          <option value="dolar">USD</option>
+          <option value="euro">EUR</option>
+        </select><br><br>
+        <label>Para:</label><br>
+        <select id="para">
+          <option value="real">BRL</option>
+          <option value="dolar">USD</option>
+          <option value="euro">EUR</option>
+        </select><br><br>
+        <button type="button" class="btn" onclick="calcularConversaoDinheiro()">Calcular</button>
+    </form>
+    </div>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
